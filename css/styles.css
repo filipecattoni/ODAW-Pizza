@@ -11,7 +11,7 @@ header {
 	background-color: #bf9b1a;
 }
 
-header div, header a {
+header a {
 	height: 100%;
 	width: 20%;
 	background-color: #bf9b1a;
@@ -19,6 +19,10 @@ header div, header a {
 	text-align: center;
 	text-decoration: none;
 	color: #000;
+}
+
+header .selected {
+	background-color: #9d8015;
 }
 
 header .separator {

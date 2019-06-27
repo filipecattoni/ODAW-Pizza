@@ -1,3 +1,9 @@
+<?php
+
+	include 'utils.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,17 +16,7 @@
 
 	<body>
 
-		<header>
-			<div id="logo">Pizzaria ABCD</div>
-			<div class="separator"></div>
-			<a href="#">Cardápio</a>
-			<div class="separator"></div>
-			<a href="#">Pedidos</a>
-			<div class="separator"></div>
-			<a href="#">Contato</a>
-			<div class="separator"></div>
-			<a href="#">Login</a>
-		</header>
+		<?php loadHeader( 4 ); ?>
 
 		<div class="container">
 			<p>
