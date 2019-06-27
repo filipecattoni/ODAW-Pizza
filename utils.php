@@ -1,5 +1,8 @@
 <?php
 
+    session_start();
+    $hash = "da39a3ee5e6b4b0d3255bfef95601890afd80709";
+
     // Função para construir o header
     //  0: Index
     //  1: Cardápio
@@ -22,6 +25,17 @@
             <div class="separator"></div>
             <a href="Login.php" class="'.$headerClasses[4].'">Login</a>
         </header>';
+
+    }
+
+    // Função para mostrar a mensagem de retorno de formulários
+    // através da variável $_SESSION[ "msg" ]
+    function printMsgForm(){
+
+        if( isset( $_SESSION[ "msg" ] ) ){
+            echo $_SESSION[ "msg" ];
+            unset( $_SESSION[ "msg" ] );
+        }
 
     }
 

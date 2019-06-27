@@ -19,9 +19,31 @@
 		<?php loadHeader( 4 ); ?>
 
 		<div class="container">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			
+			<form action="autentication.php" method="post">
+				<table>
+					<tr>
+						<h2>Login</h2>
+					</tr>
+					<tr>
+						<td><input type="text" placeholder="E-mail" name="txtUser"></td>
+					</tr>
+					<tr>
+						<td><input type="password" placeholder="Senha" name="txtPass"></td>
+					</tr>
+					<tr>
+						<td>
+							<button type="Reset">Limpar</button>
+							<button type="Submit">Login</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+			<br>
+			Não possui uma conta? <br>
+			<a href="register.php"><button>Cadastre-se</button></a>
+
 		</div>
 
 	</body>
