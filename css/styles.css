@@ -44,3 +44,13 @@ header a:hover {
 	border-radius: 25px;
 	box-shadow: 2px 2px #bbb;
 }
+
+.readtable {
+	width: 60%;
+	background: #ddd;
+	box-shadow: 2px 2px #000;
+}
+
+.readtable td, .readtable th {
+	padding: 5px;
+}

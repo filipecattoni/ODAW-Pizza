@@ -20,7 +20,7 @@
         if( isset( $_SESSION[ "permission" ] ) ){
 
             // Se estiver logado mostra botão de LogOut
-            $login = '<form action="session/logout.php">
+            $login = '<form action="/session/logout.php">
                     Conectado como '.$_SESSION[ "email" ].'<br>
                     <button type="submit">LogOut</button>
                 </form>';
@@ -28,17 +28,17 @@
             // Se for funcionário adiciona a sessão Configurações no cabeçalho
             if( $_SESSION["permission"] == 1 ){
 
-                $config = '<a href="#" class="'.$headerClasses[4].'">Configurações</a>
+                $config = '<a href="/func/confmenu.php" class="'.$headerClasses[4].'">Configurações</a>
                     <div class="separator"></div>';
 
             }
 
         }else{
-            $login = '<a href="Login.php" class="'.$headerClasses[5].'">Login</a>';
+            $login = '<a href="/Login.php" class="'.$headerClasses[5].'">Login</a>';
         }
 
         echo '<header>
-            <a href="index.php" class="'.$headerClasses[0].'"><div id="logo">Pizzaria ABCD</div></a>
+            <a href="/index.php" class="'.$headerClasses[0].'"><div id="logo">Pizzaria ABCD</div></a>
             <div class="separator"></div>
             <a href="#" class="'.$headerClasses[1].'">Cardápio</a>
             <div class="separator"></div>
