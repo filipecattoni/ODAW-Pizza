@@ -16,6 +16,7 @@
     $query = "INSERT INTO clientes ( email, senha, telefone, endereco )
         VALUES ( '".$email."', '".$pass."', '".$tel."', '".$address."' )";
     $result = mysqli_query( $link, $query );
+    
     if( $result ){
         $msg = "Cliente cadastrado com sucesso!!";
     }else{

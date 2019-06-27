@@ -16,17 +16,17 @@
 
 	<body>
 
-		<?php loadHeader( 4 ); ?>
+		<?php loadHeader( 5 ); ?>
 
 		<div class="container">
 			
-			<form action="autentication.php" method="post">
+			<form action="session/authentication.php" method="post">
 				<table>
 					<tr>
 						<h2>Login</h2>
 					</tr>
 					<tr>
-						<td><input type="text" placeholder="E-mail" name="txtUser"></td>
+						<td><input type="text" placeholder="E-mail" name="txtEmail"></td>
 					</tr>
 					<tr>
 						<td><input type="password" placeholder="Senha" name="txtPass"></td>
@@ -36,6 +36,9 @@
 							<button type="Reset">Limpar</button>
 							<button type="Submit">Login</button>
 						</td>
+					</tr>
+					<tr>
+						<td><?php printMsgForm(); ?></td>
 					</tr>
 				</table>
 			</form>
