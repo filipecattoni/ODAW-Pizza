@@ -34,7 +34,7 @@
             }
 
         }else{
-            $login = '<a href="/Login.php" class="'.$headerClasses[5].'">Login</a>';
+            $login = '<a href="/login.php" class="'.$headerClasses[5].'">Login</a>';
         }
 
         echo '<header>

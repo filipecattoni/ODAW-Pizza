@@ -22,7 +22,8 @@
 
 		<div class="container">
 			<p>
-				<a href="mfunc/menu.php">Gerenciar funcionários</a>
+				<a href="mfunc/menu.php">Gerenciar funcionários</a><br>
+				<a href="mprod/menu.php">Gerenciar produtos</a>
 			</p>
 		</div>
 
